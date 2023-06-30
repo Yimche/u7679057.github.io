@@ -9,27 +9,50 @@
     <h1>My Social Media Links</h1>
     <text>Talk to me</text>
     <div class="social-links">
-      <a href="https://www.instagram.com/j_cym_/" class="social-link">
+      <div class="social-link-container">
+      <a href="https://www.instagram.com/j_cym_/" class="social-link" target="_blank" rel="noopener noreferrer">
         <img src="logos/instagram.png" alt="Instagram" class="social-icon">
         <text class="link">j_cym_</text>
       </a>
-      <a href="https://www.facebook.com/julian.mo.315/" class="social-link">
-        <img src="logos/facebook.png" alt="Facebook" class="social-icon">
-        <text class="link">Julian Mo</text>
-      </a>
-      <a href="#" class="social-link">
-        <img src="logos/wechat.png" alt="WeChat" class="social-icon" style="object-fit:cover;object-position: center;">
-        <text class="link">巫卓然</text>
-      </a>
-      <a href="#" class="social-link">
-        <img src="logos/whatsapp.png" alt="WhatsApp" class="social-icon">
-        <text class="link">巫卓然</text>
-      </a>
-      <a class="social-link">
-        <img src="logos/discord.png" alt="WhatsApp" class="social-icon" style="height:40px">
-        <text class="link">Yimche</text>
-      </a>
+      </div>
+      <div class="social-link-container">
+        <a href="https://www.facebook.com/julian.mo.315/" class="social-link" target="_blank" rel="noopener noreferrer">
+          <img src="logos/facebook.png" alt="Facebook" class="social-icon">
+          <text class="link">Julian Mo</text>
+        </a>
+      </div>
+      <div class="social-link-container">
+        <a href="#" class="social-link" onclick="toggleQRCode(event, 'wechat-qr-code')">
+          <img src="logos/wechat.png" alt="WeChat" class="social-icon" style="object-fit:cover;object-position: center;">
+          <text class="link">巫卓然</text>
+        </a>
+        <img src="qr-codes/wechat-qr-code.jpg" 
+             href="https://u.wechat.com/kBe4fuW_nFPKWQLj_0gzZkA"
+             target="_blank" rel="noopener noreferrer"
+             alt="WeChat" 
+             id="wechat-qr-code" 
+             class="qr-code">
+      </div>
+      <div class="social-link-container">
+        <a href="#" class="social-link" onclick="toggleQRCode(event, 'whatsapp-qr-code')">
+          <img src="logos/whatsapp.png" alt="whatsapp" class="social-icon" style="object-fit:cover;object-position: center;">
+          <text class="link">巫卓然</text>
+        </a>
+        <img src="qr-codes/whatsapp-qr-code.jpg" 
+             href="#"
+             target="_blank" rel="noopener noreferrer"
+             alt="Whatsapp" 
+             id="whatsapp-qr-code" 
+             class="qr-code">
+      </div>
+      <div class="social-link-container">
+        <a class="social-link">
+          <img src="logos/discord.png" alt="Discord" class="social-icon" style="height:40px">
+          <text class="link">yimche</text>
+        </a>
+      </div>
     </div>
   </div>
+  <script src="toggleQrCode.js"></script>
 </body>
 </html>

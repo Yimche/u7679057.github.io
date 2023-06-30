@@ -1,5 +1,6 @@
 * {
     background-color: aliceblue;
+    font-family: JetBrains Mono Medium;
   }
 
 .container {
@@ -19,17 +20,24 @@
     margin-top: 30px;
     text-decoration: none;
     row-gap: 10px;
+    max-width: 30%;
   }
   
+  .social-link-container {
+    background: #777;
+    display: flex;
+    flex-direction: column;
+    border: 5px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: #777;
+  }
+
   .social-link {
     background-color: #777;
     display: flex;
     flex-direction: row;
     margin: 10px;
-    border: 5px;
-    border-style: solid;
-    border-radius: 3px;
-    border-color: #777;
   }
 
   a.social-link {
@@ -51,12 +59,13 @@
     align-self: left;
     background-color: #777;
   }
-  
-  .discord {
-    margin-top: 30px;
+
+  .qr-code {
+    display: none;
   }
   
-  .friend-code {
-    font-weight: bold;
+  .qr-code.show {
+    display: inline-block;
+    object-fit: contain;
+    margin: 10px;
   }
-  
