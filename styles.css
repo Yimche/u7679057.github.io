@@ -44,7 +44,7 @@
     border: none;
     outline: none;
     overflow: hidden;
-    font-size: 2vh;
+    font-size: 1.3em;
   }
 
   nav div button a {
@@ -95,7 +95,7 @@
   }
 
   .aboutme {
-    font-size: 2.2vh;
+    font-size: 1.5em;
     margin-top: 5px;
     background: none;
     color: aliceblue;
@@ -106,7 +106,7 @@
   /* socials */
 
   .words {
-    font-size: 3vh;
+    font-size: 4vh;
     background-color: inherit;
     color: #333;
     text-align: center;
@@ -131,6 +131,9 @@
     border-style: solid;
     border-radius: 3px;
     border-color: #777;
+    min-height: 80px;
+    min-width: 500px;
+    justify-content: center;
   }
 
   .social-link {
@@ -152,7 +155,7 @@
     align-self: center;
     justify-self: center;
     background-color: #777;
-    font-size: 2vh;
+    font-size: 1.4em;
   }
 
   .social-icon {
