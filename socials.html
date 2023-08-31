@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Social Media Links</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <nav class="sticky">
+    <div class="container Julian">
+      <button class="nav-button">
+        <a href="index.html">JULIAN MO</a>
+      </button>
+    </div>
+    <div class="container nav-links">
+      <button class="nav-button">
+        <a href="socials.html">SOCIALS</a>
+      </button>
+    </div>
+  </nav>
+  <div class="container">
+    <h1 class="words">My Social Media Links</h1>
+    <div class="social-links">
+      <div class="social-link-container">
+      <a href="https://www.instagram.com/j_cym_/" class="social-link" target="_blank" rel="noopener noreferrer">
+        <img src="meta/logos/instagram.png" alt="Instagram" class="social-icon">
+        <text class="link">j_cym_</text>
+      </a>
+      </div>
+      <div class="social-link-container">
+        <a href="https://www.facebook.com/julian.mo.315/" class="social-link" target="_blank" rel="noopener noreferrer">
+          <img src="meta/logos/facebook.png" alt="Facebook" class="social-icon">
+          <text class="link">Julian Mo</text>
+        </a>
+      </div>
+      <div class="social-link-container">
+        <a href="#" class="social-link" onclick="toggleQRCode(event, 'wechat-qr-code')">
+          <img src="meta/logos/wechat.png" alt="WeChat" class="social-icon" style="object-fit:cover;object-position: center;">
+          <text class="link">巫卓然</text>
+        </a>
+        <img src="qr-codes/wechat-qr-code.jpg" 
+             href="https://u.wechat.com/kBe4fuW_nFPKWQLj_0gzZkA"
+             target="_blank" rel="noopener noreferrer"
+             alt="WeChat" 
+             id="wechat-qr-code" 
+             class="qr-code">
+      </div>
+      <div class="social-link-container">
+        <a href="#" class="social-link" onclick="toggleQRCode(event, 'whatsapp-qr-code')">
+          <img src="meta/logos/whatsapp.png" alt="whatsapp" class="social-icon" style="object-fit:cover;object-position: center;">
+          <text class="link">巫卓然</text>
+        </a>
+        <img src="qr-codes/whatsapp-qr-code.jpg" 
+             href="#"
+             target="_blank" rel="noopener noreferrer"
+             alt="Whatsapp" 
+             id="whatsapp-qr-code" 
+             class="qr-code">
+      </div>
+      <div class="social-link-container">
+        <a href="https://open.spotify.com/user/bq062z9bqj5pbei0lcwlyhfvf" class="social-link" target="_blank" rel="noopener noreferrer">
+          <img src="meta/logos/spotify.png" alt="Spotify" class="social-icon">
+          <text class="link">jcym</text>
+        </a>
+      </div>
+      <div class="social-link-container">
+        <a href="https://www.last.fm/user/Yimche" class="social-link" target="_blank" rel="noopener noreferrer">
+          <img src="meta/logos/lastfm.png" alt="Spotify" class="social-icon">
+          <text class="link">Yimche</text>
+        </a>
+      </div>
+      <div class="social-link-container">
+        <a class="social-link">
+          <img src="meta/logos/discord.png" alt="Discord" class="social-icon" style="height:40px">
+          <text class="link">yimche</text>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="toggleQrCode.js"></script>
+  <script src="sticky.js"></script>
+</body>
+</html>
