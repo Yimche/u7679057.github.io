@@ -10,6 +10,11 @@
   src: url("meta/fonts/JetBrainsMono-Medium.ttf") format("truetype");
 }
 
+html {
+  display: flex;
+  justify-content: center;
+}
+
 html,
 body {
   background: var(--color-base);
@@ -51,17 +56,10 @@ body .container h2 {
   font-size: smaller;
 }
 
-
-
 /* Startpage */
-html, body.startpage {
-  background: var(--color-base);
+
+body.startpage {
   color: var(--color-teal);
-  font-family: "JetBrains Mono Medium";
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
 }
