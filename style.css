@@ -174,11 +174,11 @@ body.startpage {
 
 a:link {
   text-decoration: none;
-  color: var(--color-blue);
+  color: var(--color-mauve);
 }
 
 a:visited {
-  color: var(--color-flamingo);
+  color: var(--color-blue);
 }
 
 a:hover {
