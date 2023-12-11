@@ -69,6 +69,17 @@ body.startpage {
   flex-direction: row;
 }
 
+.startpage input {
+  border: none;
+  background: transparent;
+  font-family: "JetBrains Mono Medium";
+  font-size: 4vmin;
+  color: var(--color-teal);
+  outline: none;
+  caret-color: transparent;
+  box-sizing: unset;
+}
+
 ::placeholder {
   color: var(--color-text);
   opacity: 1;
@@ -172,17 +183,6 @@ a:visited {
 
 a:hover {
   color: var(--color-lavender);
-}
-
-input {
-  border: none;
-  background: transparent;
-  font-family: "JetBrains Mono Medium";
-  font-size: 4vmin;
-  color: var(--color-teal);
-  outline: none;
-  caret-color: transparent;
-  box-sizing: unset;
 }
 
 .blinking {
