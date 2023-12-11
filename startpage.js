@@ -61,3 +61,18 @@ function updateTime() {
 }
 
 setInterval(updateTime, 10);
+
+function handleKeyPress(event) {
+  if (event.key === 'Enter') {
+    performSearch();
+  }
+}
+
+function performSearch() {
+  var searchTerm = document.querySelector('input').value;
+  if (searchTerm.trim() !== '') {
+    // var googleSearchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(searchTerm);
+    var duckSearchUrl = 'https://duckduckgo.com/?q=' + encodeURIComponent(searchTerm)
+    window.location.href = duckSearchUrl;
+  }
+}

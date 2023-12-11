@@ -10,7 +10,8 @@
       <div class="container">
         <div class="head">
           <div class="search-container">
-            <span>> ~</span>
+            <span>> </span>
+            <input type="search" size=1 placeholder="" oninput="this.style.width = (this.value.length) + 'ch';" onkeypress="handleKeyPress(event)">
             <span class="blinking">_</span>
           </div>
           <div id="welcome"></div>

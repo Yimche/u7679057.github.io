@@ -174,6 +174,17 @@ a:hover {
   color: var(--color-lavender);
 }
 
+input {
+  border: none;
+  background: transparent;
+  font-family: "JetBrains Mono Medium";
+  font-size: 4vmin;
+  color: var(--color-teal);
+  outline: none;
+  caret-color: transparent;
+  box-sizing: unset;
+}
+
 .blinking {
   animation: opacity 1s ease-in-out infinite;
   opacity: 1;
