@@ -135,7 +135,7 @@ body.startpage {
 .startpage .category {
   display: flex;
   flex-direction: column;
-  width: 30vmin;
+  width: 25vmin;
 }
 
 .startpage .bookmarks {
@@ -152,11 +152,11 @@ body.startpage {
 }
 
 .startpage .title {
-  font-size: 4vmin;
+  font-size: 3vmin;
 }
 
 .startpage li {
-  font-size: 3vmin;
+  font-size: 2.5vmin;
   list-style-type: none;
   padding: 5px;
 }
