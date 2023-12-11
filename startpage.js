@@ -71,8 +71,12 @@ function handleKeyPress(event) {
 function performSearch() {
   var searchTerm = document.querySelector('input').value;
   if (searchTerm.trim() !== '') {
-    // var googleSearchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(searchTerm);
-    var duckSearchUrl = 'https://duckduckgo.com/?q=' + encodeURIComponent(searchTerm)
-    window.location.href = duckSearchUrl;
+    if (searchTerm.trim().includes('www.') || searchTerm.trim().includes('.org') || searchTerm.trim().includes('.com')) {
+      window.location.href = 'https://' + encodeURI(searchTerm.trim());
+    } else {
+      // var googleSearchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(searchTerm);
+      var duckSearchUrl = 'https://duckduckgo.com/?q=' + encodeURIComponent(searchTerm)
+      window.location.href = duckSearchUrl;
+    }
   }
 }
