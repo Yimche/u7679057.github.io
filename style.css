@@ -78,6 +78,8 @@ body.startpage {
   outline: none;
   caret-color: transparent;
   box-sizing: unset;
+  padding-left: 1ch;
+  width: 0px;
 }
 
 ::placeholder {
