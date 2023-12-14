@@ -71,12 +71,29 @@ function handleKeyPress(event) {
 function performSearch() {
   var searchTerm = document.querySelector('input').value;
   if (searchTerm.trim() !== '') {
-    if (searchTerm.trim().includes('www.') || searchTerm.trim().includes('.org') || searchTerm.trim().includes('.com')) {
+    if (searchTerm.trim().includes('https://')) {
+      window.location.href = searchTerm.trim();
+    } else if (
+      searchTerm.trim().includes('www.')      ||
+      searchTerm.trim().includes('.org')      ||
+      searchTerm.trim().includes('.com')      ||
+      searchTerm.trim().includes('.net')      ||
+      searchTerm.trim().includes('.gov')      ||
+      searchTerm.trim().includes('.edu')      ||
+      searchTerm.trim().includes('.co')       ||
+      searchTerm.trim().includes('.io') 
+    ) {
       window.location.href = 'https://' + encodeURI(searchTerm.trim());
+    } else if (
+      searchTerm.trim().includes('127.0.0.1') &&
+      searchTerm.trim().includes('.html')
+    ) {
+      window.location.href = 'http://' + searchTerm;
     } else {
       // var googleSearchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(searchTerm);
       var duckSearchUrl = 'https://duckduckgo.com/?q=' + encodeURIComponent(searchTerm)
       window.location.href = duckSearchUrl;
     }
+    document.querySelector('input').value = '';
   }
 }
