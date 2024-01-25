@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="startpage">
   <head>
     <meta charset="UTF-8" />
     <title>~/startpage</title>
