@@ -10,13 +10,9 @@
   src: url("meta/fonts/JetBrainsMono-Medium.ttf") format("truetype");
 }
 
-html {
-  display: flex;
-  justify-content: center;
-}
 
-html,
-body {
+/* Startpage */
+html.startpage, body.startpage {
   background: var(--color-base);
   color: var(--color-lavender);
   font-family: "JetBrains Mono Medium";
@@ -24,41 +20,6 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-}
-
-/* nav bar */
-nav {
-  padding-top: 5vh;
-  padding-left: 5vw;
-  font-size: 18px;
-  display: flex;
-  width: 100%;
-}
-
-nav li {
-  padding-inline: 4vw;
-  list-style: none;
-  justify-self: start;
-}
-
-body {
-  max-width: 90%;
-}
-
-body .container {
-  padding-inline: 10vw;
-}
-
-body .container h1 {
-  max-height: 20px;
-}
-body .container h2 {
-  font-size: smaller;
-}
-
-/* Startpage */
-
-body.startpage {
   color: var(--color-teal);
   display: flex;
   justify-content: center;
