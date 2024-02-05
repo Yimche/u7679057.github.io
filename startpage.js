@@ -10,7 +10,7 @@ var weekDays = [
 ];
 var months = [
   "january",
-  "feburary",
+  "february",
   "march",
   "april",
   "may",
