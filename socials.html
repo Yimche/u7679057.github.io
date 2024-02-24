@@ -8,14 +8,49 @@
   <br>
   <br>
   <nav>
-      <li><a href=".">home</a></li>
-      <li><a href=".">projects</a></li>
-      <li><a href=".">about me</a></li>
+      <a href=".">home</a>
+      <a href=".">projects</a>
+      <a href=".">about me</a>
   </nav>
   <br>
   <body>
-    <div class="container">
-        <h1> My Socials </h1>
-    </div>
+    <h1> My Socials </h1>
+    <br>
+    <table width=100% class="socials-table">
+      <tr>
+        <td onclick="redirectToUrl('https://www.facebook.com/julian.mo.315/')">Facebook</td>
+        <td onclick="redirectToUrl('https://www.instagram.com/j_cym_/')">Instagram</td>
+        <td onclick="toggleQRCode(event, 'whatsapp-qr-code')">
+          Whatsapp
+          <img src="meta/qr-codes/whatsapp-qr-code.jpg"
+            href="#"
+            target="_blank" rel="noopener noreferrer"
+            alt="Whatsapp" 
+            id="whatsapp-qr-code"
+            class="qr-code"
+          >
+        </td>
+      </tr>
+      <tr>
+        <td onclick="toggleQRCode(event, 'wechat-qr-code')">
+          WeChat
+          <img src="meta/qr-codes/wechat-qr-code.jpg" 
+            href="#"
+            target="_blank" rel="noopener noreferrer"
+            alt="WeChat" 
+            id="wechat-qr-code" 
+            class="qr-code"
+          >
+        </td>
+        <td onclick="redirectToUrl('https://discord.com/invite/KeEntcQX')">Discord</td>
+        <td onclick="redirectToUrl('https://github.com/Yimche')">Github</td>
+      </tr>
+      <tr>
+        <td onclick="redirectToUrl('https://open.spotify.com/user/bq062z9bqj5pbei0lcwlyhfvf')">Spotify</td>
+        <td onclick="redirectToUrl('https://www.last.fm/user/Yimche')">Last.fm</td>
+      </tr>
+    </table>
   </body>
+    <script src="meta/scripts/redirectToUrl.js"></script>
+    <script src="meta/scripts/toggleQRCode.js"></script>
 </html>
