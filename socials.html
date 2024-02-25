@@ -16,11 +16,11 @@
   <body>
     <h1> My Socials </h1>
     <br>
-    <table width=100% class="socials-table">
-      <tr>
-        <td onclick="redirectToUrl('https://www.facebook.com/julian.mo.315/')">Facebook</td>
-        <td onclick="redirectToUrl('https://www.instagram.com/j_cym_/')">Instagram</td>
-        <td onclick="toggleQRCode(event, 'whatsapp-qr-code')">
+    <div width=100% class="socials-table">
+      <div>
+        <div class="social-link" onclick="redirectToUrl('https://www.facebook.com/julian.mo.315/')">Facebook</div>
+        <div class="social-link" onclick="redirectToUrl('https://www.instagram.com/j_cym_/')">Instagram</div>
+        <div class="social-link" onclick="toggleQRCode(event, 'whatsapp-qr-code')">
           Whatsapp
           <img src="meta/qr-codes/whatsapp-qr-code.jpg"
             href="#"
@@ -29,10 +29,12 @@
             id="whatsapp-qr-code"
             class="qr-code"
           >
-        </td>
-      </tr>
-      <tr>
-        <td onclick="toggleQRCode(event, 'wechat-qr-code')">
+        </div>
+      </div>
+      <br>
+      <br>
+      <div>
+        <div class="social-link" onclick="toggleQRCode(event, 'wechat-qr-code')">
           WeChat
           <img src="meta/qr-codes/wechat-qr-code.jpg" 
             href="#"
@@ -41,15 +43,17 @@
             id="wechat-qr-code" 
             class="qr-code"
           >
-        </td>
-        <td onclick="redirectToUrl('https://discord.com/invite/KeEntcQX')">Discord</td>
-        <td onclick="redirectToUrl('https://github.com/Yimche')">Github</td>
-      </tr>
-      <tr>
-        <td onclick="redirectToUrl('https://open.spotify.com/user/bq062z9bqj5pbei0lcwlyhfvf')">Spotify</td>
-        <td onclick="redirectToUrl('https://www.last.fm/user/Yimche')">Last.fm</td>
-      </tr>
-    </table>
+        </div>
+        <div class="social-link" onclick="redirectToUrl('https://discord.com/invite/KeEntcQX')">Discord</div>
+        <div class="social-link" onclick="redirectToUrl('https://github.com/Yimche')">Github</div>
+      </div>
+      <br>
+      <br>
+      <div>
+        <div class="social-link" onclick="redirectToUrl('https://open.spotify.com/user/bq062z9bqj5pbei0lcwlyhfvf')">Spotify</div>
+        <div class="social-link" onclick="redirectToUrl('https://www.last.fm/user/Yimche')">Last.fm</div>
+      </div>
+    </div>
   </body>
     <script src="meta/scripts/redirectToUrl.js"></script>
     <script src="meta/scripts/toggleQRCode.js"></script>

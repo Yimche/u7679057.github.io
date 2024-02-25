@@ -66,20 +66,28 @@ div .indexImage {
 .socials-table {
   width: 100%;
 }
-.socials-table tr td {
+
+/* .socials-table div { */
+  /* background: #727272; */
+/* } */
+
+.socials-table div.social-link {
   background: #1e1e1e;
   border-radius: 3px;
   padding: 20px;
-  max-width: 30px !important;
   vertical-align: top;
+  padding-inline: 50px;
+  display: inline-block;
+  min-width: 20%;
+  max-width: 20%;
 }
 
-.socials-table tr td:hover {
+.socials-table div.social-link:hover {
   cursor: pointer;
 }
 
-.socials-table tr td img {
-  max-width: 30%;
+.socials-table div.social-link img {
+  max-width: 100%;
 }
 
 /* QR CODE  */
@@ -88,7 +96,7 @@ div .indexImage {
 }
 
 .qr-code.show {
-  display: block;
+  display: flex;
   object-fit: contain;
   max-width: 100%;
   max-height: 100%;
