@@ -52,24 +52,38 @@ body {
 }
 
 /* index page */
-div .indexImage {
-  max-width: 60%;
-}
-
 .indexImage {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.indexImage img {
+  max-width: 100%;
+}
+
+p.center {
+  justify-content: center;
+  display: flex;
+  margin: auto;
+}
+
+div.now-playing, span#now-playing{
+  background-color: #1e1e1e;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  max-width: 100%;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+
 /* socials page */
 .socials-table {
   width: 100%;
 }
-
-/* .socials-table div { */
-  /* background: #727272; */
-/* } */
 
 .socials-table div.social-link {
   background: #1e1e1e;
